@@ -1,5 +1,5 @@
 % crop the full histopathology images to 4*4 =16 patches
-% author:  Li Chao, 2017-06-16
+% author:  Chao , 2017-06-16
 
 function []= crop4imgs()
 dirname={'01','02','03','04','05','06','07','08','09','10','11','12', '13','14','15','16','17','18','19','20','21','22','23'};  % 01-12 for train, 13-23 for test
