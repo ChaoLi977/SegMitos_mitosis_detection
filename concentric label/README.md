@@ -17,7 +17,7 @@ For generating the random concentric label for full images(sized 2000*2000). The
 
 b. Run crop4imgs.m
 
-For cropping patches from full histopathology images. The size of a patch is 500*500 pixels. Hence we crop 4x4 patches for each full image. 
+For cropping patches from full histopathology images. The size of a patch is 500*500 pixels, and the size of the full image is 2000*2000 pixels. Hence we can crop 16 patches for each full image. 
 
 c. Run crop4imgs_gt.m
 
@@ -25,15 +25,20 @@ For cropping patches from full label images. The size of a patch is 500*500 pixe
 
 d. Run PosOrNeg.m
 
-For generating the list of all positive patches. Since we will make more augmentation for positive patch to balance the data.
+For generating the list of all positive patches. Since we will make more augmentation for positive patches to balance the data.
 
 e. Run augmentData.m
 
-For performing data augmentation on histopathology patches.
+For performing data augmentation on histopathology patches. These augmented patches are used for training the SegMitos model.
 
 f. Run augmentData_gt.m
 
-For performing data augmentation on label image patches. 
+For performing data augmentation on label image patches. These augmented label patches are used for training the SegMitos model.
+
+g. Run csv2mat.m
+
+For converting the .csv format ground truth to .mat format ground truth. Since we use the .mat format ground truth when calculating the F-value of detection results. 
+
 
 
 
