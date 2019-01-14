@@ -1,7 +1,7 @@
 
 % crop the full label images to 4*4 =16 patches
 % for AMIDA 13
-% author:  Li Chao, 2017-06-16
+% author:  Chao Li, 2017-06-16
 
 function []= crop4imgs_gt()
 folder_g='C:\work\dataset\cell detection\TUPAC16\AMIDA13\GroundTruth_ring_random\gtImg1\';
