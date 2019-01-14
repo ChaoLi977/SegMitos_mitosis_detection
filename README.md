@@ -29,5 +29,6 @@ We use a TITAN X GPU with ~12GB memory in our experiments. However, a good GPU w
    python solve.py
 3. Deploy the trained model on mitosis images and produce the final detection results.
    
+   test:test   
 
 
