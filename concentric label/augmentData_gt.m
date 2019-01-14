@@ -2,7 +2,7 @@
 % For four different random concentric labels (gtImg1-gtImg4), we only take part of augmented images. 
 
 % for AMIDA 13
-% author:  Li Chao, 2017-06-16
+% author:  Chao Li, 2017-06-16
 
 function []=augmentData_gt()
 saveDir='C:\work\dataset\cell detection\TUPAC16\AMIDA13\augImg_gt_ring_random\';
