@@ -1,6 +1,6 @@
 % data augmentation for histopathology patch images
 % for AMIDA 13
-% author:  Li Chao, 2017-06-16
+% author:  Chao Li, 2017-06-16
 
 function []=augmentData()
 saveDir='C:\work\dataset\cell detection\TUPAC16\AMIDA13\augImg\';
@@ -28,7 +28,7 @@ I=imread(Imgfile);
 IJ=jitterImage(I,'nPhi',9,'mPhi',180,'nTrn',3,'mTrn',20,'flip',1, 'hasChn',1);  %IJ is 9*9*2 images ,size:(521,521,162)
 %montage2(uint8(IJ),{'hasChn',1})
 name1=Img(1:end-4);
-for i=[1:72,82:153]  % 此处需要改，gtImg1; gtImg2: +1
+for i=[1:72,82:153]  % 麓脣麓娄脨猫脪陋赂脛拢卢gtImg1; gtImg2: +1
     if i<10
         imwrite(IJ(:,:,:,i), [saveDir,name1,'_0',num2str(i),'.jpg']);
     else
