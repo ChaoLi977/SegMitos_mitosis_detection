@@ -9,7 +9,7 @@ import os
 #import setproctitle
 #setproctitle.setproctitle(os.path.basename(os.getcwd()))
 
-weights = '../ilsvrc-nets/vgg16-fc.caffemodel'  
+weights = '$fcn32s-heavy-pascal.caffemodel'  # or '$2012 MITOSIS trained caffemodel'
 
 # init
 caffe.set_device(0)
