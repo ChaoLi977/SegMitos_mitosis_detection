@@ -2,18 +2,18 @@
 % author: Chao Li
 % date:2017/6/16
 % for AMIDA 13 dataset
-gt_Img='C:\work\dataset\cell detection\TUPAC16\AMIDA13\GroundTruth_ring_random\gtImg1\';
+gt_Img='$AMIDA13\GroundTruth_ring_random\gtImg1\';
 % Noted that in our experiments we run this m file multiple times, so that we can get multiple random concentric label images (e.g., gtImg1, gtImg2, gtImg3, gtImg4)
 
 dirname = {'01','02','03','04','05','06','07','08','09','10','11','12','13','14','15','16',...
     '17','18','19','20','21','22','23'};
 for i=1:length(dirname)
     if str2num(dirname{i})<=14
-        rt_folder = 'C:\work\dataset\cell detection\TUPAC16\TUPAC2016\mitoses_image_data_part_1\';
+        rt_folder = '$AMIDA13\mitoses_image_data_part_1\';
     else
-        rt_folder = 'C:\work\dataset\cell detection\TUPAC16\TUPAC2016\mitoses_image_data_part_2\';
+        rt_folder = '$AMIDA13\mitoses_image_data_part_2\';
     end
-    gt_csv='C:\work\dataset\cell detection\TUPAC16\TUPAC2016\mitoses_ground_truth';
+    gt_csv='$AMIDA13\mitoses_ground_truth';
     folder=fullfile(gt_csv, dirname{i});
     FileList=dir(fullfile(rt_folder, dirname{i}, '\*.tif'));
     save_gtImg=[gt_Img,dirname{i},'\'];
