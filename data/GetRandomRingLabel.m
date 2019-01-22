@@ -2,18 +2,20 @@
 % author: Chao Li
 % date:2017/6/16
 % for AMIDA 13 dataset
-gt_Img='$AMIDA13\GroundTruth_ring_random\gtImg1\';
-% Noted that in our experiments we run this m file multiple times, so that we can get multiple random concentric label images (e.g., gtImg1, gtImg2, gtImg3, gtImg4)
+gt_Img='$AMIDA13\GroundTruth_ring_random\gtImg1\';  % the dir to save the concentric labels
+% Noted that in our experiments we run this m file multiple times, 
+% so that we can get multiple random concentric label images (e.g., gtImg1, gtImg2, gtImg3, gtImg4)
 
 dirname = {'01','02','03','04','05','06','07','08','09','10','11','12','13','14','15','16',...
     '17','18','19','20','21','22','23'};
 for i=1:length(dirname)
+    % if you download the AMIDA13 from TUPAC16 website, the data are in different folders
     if str2num(dirname{i})<=14
         rt_folder = '$AMIDA13\mitoses_image_data_part_1\';
     else
         rt_folder = '$AMIDA13\mitoses_image_data_part_2\';
     end
-    gt_csv='$AMIDA13\mitoses_ground_truth';
+    gt_csv='$AMIDA13\mitoses_ground_truth';  % ground truth dir
     folder=fullfile(gt_csv, dirname{i});
     FileList=dir(fullfile(rt_folder, dirname{i}, '\*.tif'));
     save_gtImg=[gt_Img,dirname{i},'\'];
@@ -37,10 +39,10 @@ for i=1:length(dirname)
                     for y=yc-R:yc+R
                         if (x-xc)^2+(y-yc)^2<=r^2
                             x1=max(min(2000, x),1);  y1=max(min(2000, y),1);
-                            img(x1, y1)=255;
+                            img(x1, y1)=255;  % we use this value and transfer it to 1 in data layer 
                         elseif (x-xc)^2+(y-yc)^2<=R^2
                             x1=max(min(2000, x),1);  y1=max(min(2000, y),1);
-                            img(x1, y1)=120;
+                            img(x1, y1)=120;   % we use this value and transfer it to 255 in
                         end
                     end
                 end
