@@ -2,7 +2,7 @@
 Weakly Supervised Mitosis Detection in Breast Histopathology Images using Concentric Loss
 By [Chao Li](https://chaoli977.weebly.com/), [Xinggang Wang](http://www.xinggangw.info/), [Wenyu Liu](http://mclab.eic.hust.edu.cn/MCWebDisplay/PersonDetails.aspx?Name=Wenyu%20Liu), [Longin Jan Latecki](https://cis.temple.edu/~latecki/), [Bo Wang](https://bowang87.weebly.com/) and [Junzhou Huang](http://ranger.uta.edu/~huang/)
 
-Codes for our paper "Weakly Supervised Mitosis Detection in Breast Histopathology Images using Concentric Loss". 
+Codes for our Medical Image Analysis paper ["Weakly Supervised Mitosis Detection in Breast Histopathology Images using Concentric Loss"](https://www.sciencedirect.com/science/article/pii/S1361841519300118). 
 
     
 ### Contents
