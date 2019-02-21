@@ -5,7 +5,7 @@ We use AMIDA13 MITOSIS dataset for example, and other datasets can be processed 
 
 ## Download the AMIDA13 dataset. 
 
-Now the web of AMIDA13 cannot be accessed, but you can still download the data from TUPAC16 dataset (https://mitos-atypia-14.grand-challenge.org/Donwload/) because the AMIDA13 is a part of TUPAC16 dataset.
+Now the web of AMIDA13 cannot be accessed, but you can still download the data from TUPAC16 dataset (http://tupac.tue-image.nl/node/3) because the AMIDA13 is a part of TUPAC16 dataset.
 
 The first 12 (01-12) folders are for training, and the next 11 (13-23) folders are for testing.
 
