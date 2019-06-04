@@ -14,7 +14,7 @@ Codes for our Medical Image Analysis paper ["Weakly Supervised Mitosis Detection
 ### Requirements: software
 
 We use the deep learning framework Caffe to train the segmentation network. 
-The code for data preparation is written by Matlab, while the codes for training the SegMitos network and detecting the mitosis is written by Python.
+The code for data preparation is written by Matlab, while the codes for training the SegMitos network and detecting the mitosis is written in Python.
 
 
 ### Requirements: hardware
@@ -25,7 +25,7 @@ We use a TITAN X GPU with ~12GB memory in our experiments. However, a good GPU w
 
 1. Install the [Caffe framework](http://caffe.berkeleyvision.org/). Note that our model uses the old version of Caffe crop layer, which doesn't have "crop_param" parameter. Specifically, we use the Caffe of [HED](https://github.com/s9xie/hed). Latest version of Caffe should also work, but the parameters of crop layer need to be added.
 
-2. Prepare data and produce the concentric labels. Please see data/README.md for more details.
+2. Prepare data and produce the concentric labels. Please see `data/README.md` for more details.
 
 2. Train the SegMitos model: 
    ```bash
